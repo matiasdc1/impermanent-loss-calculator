@@ -1,0 +1,55 @@
+.container {
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2);
+  background: rgb(2, 87, 110);
+  background: linear-gradient(90deg, rgba(2, 87, 110, 1) 0%, rgba(18, 64, 138, 1) 100%);
+  width: 200px;
+}
+
+.container label {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.container input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(255, 255, 255, 0.4) 1px solid;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.scale_up_center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
